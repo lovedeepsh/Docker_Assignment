@@ -1,0 +1,48 @@
+- Run a ubuntu 16.04 container
+ - Name the container: "ub01"
+ - Set the hostname of container: "ub.example.com"
+ - Assign memory : 800 MB
+ - Set environment variables
+     - NAME: $(yourname)
+     - ORG: Opstree
+     - TEAM: Ninja
+     - TASK: Docker
+ - Set above defined variables from a file
+ - Set container default login directory to /var/log
+
+
+
+Docker Lifecycle
+
+- Start an Ubuntu 14.04 container
+- Get /var/log/dpkg.log on your host machine from container
+- Delete /var/log/dpkg.log that file from container
+- Create a new image of the current state of container and it "ubuntu:custom"
+- Remove the container
+- Run a new container of fresh image "ubuntu:custom"
+- Check for the earlier deleted file inside the container
+- Copy that file to container from host machine
+- Recheck the file inside container.
+
+
+
+Docker Inspection
+
+- Run a jenkins container and inspect the following info
+ - IP Address
+ - Mac Address
+ - Hostname
+ - Container Name
+ - Environment Variables
+
+
+
+Docker Monitoring
+
+- Run 2 containers
+ - Check the following resource utilization
+     - Memory
+     - CPU
+     - Disk I/O
+     - Net I/O
+ - List down the process running inside the containers

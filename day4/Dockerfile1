@@ -1,0 +1,7 @@
+FROM alpine
+MAINTAINER Lovedeep Sharma
+RUN apk update -y
+RUN apk add nodejs
+COPY . /app
+WORKDIR /app
+CMD node index.js
